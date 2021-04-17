@@ -1,0 +1,176 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Applications/Unity_projects/Principia_Comunity_2021
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49573
+Successfully changed project path to: /Applications/Unity_projects/Principia_Comunity_2021
+/Applications/Unity_projects/Principia_Comunity_2021
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 88.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.5f1 (e2c53f129de5)
+[Subsystems] Discovering subsystems at path /Applications/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Applications/Unity_projects/Principia_Comunity_2021/Assets
+GfxDevice: creating device client; threaded=0
+Renderer: NVIDIA GeForce 320M OpenGL Engine
+Vendor:   NVIDIA Corporation
+Version:  3.3 NVIDIA-10.4.14 310.90.30.05b27
+GLES:     0
+ GL_ARB_blend_func_extended GL_ARB_draw_buffers_blend GL_ARB_ES2_compatibility GL_ARB_explicit_attrib_location GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_occlusion_query2 GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_separate_shader_objects GL_ARB_shader_bit_encoding GL_ARB_shading_language_include GL_ARB_texture_cube_map_array GL_ARB_texture_query_lod GL_ARB_texture_rgb10_a2ui GL_ARB_texture_storage GL_ARB_texture_swizzle GL_ARB_timer_query GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_EXT_debug_label GL_EXT_debug_marker GL_EXT_depth_bounds_test GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_mirror_clamp GL_EXT_texture_sRGB_decode GL_APPLE_client_storage GL_APPLE_container_object_shareable GL_APPLE_flush_render GL_APPLE_object_purgeable GL_APPLE_rgb_422 GL_APPLE_row_bytes GL_APPLE_texture_range GL_ATI_texture_mirror_once GL_NV_texture_barrier
+OPENGL LOG: Creating OpenGL 3.3 graphics device ; Context level  <OpenGL 3.3> ; Context handle 2030490624
+Initialize mono
+Mono path[0] = '/Applications/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56545
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000905 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 63.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.989 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005390 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.328 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1126 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 109.8 MB.
+System memory in use after: 109.9 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1595.
+Total: 4.748877 ms (FindLiveObjects: 0.335396 ms CreateObjectMapping: 0.077560 ms MarkObjects: 3.532837 ms  DeleteObjects: 0.800701 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Materials/wood.mat
+  artifactKey: Guid(bb2f5d3446ed44325a5510159d2962b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/wood.mat using Guid(bb2f5d3446ed44325a5510159d2962b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2bc7dc729466fa30c2d5ad082cf51d8') in 0.442748 seconds
+  Import took 0.448424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/Materials/light steel.mat
+  artifactKey: Guid(732160964bb03460086986689ebf01d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/light steel.mat using Guid(732160964bb03460086986689ebf01d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02dfb51cf02ce1b09fd176922d274596') in 0.037320 seconds
+  Import took 0.047138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001465 seconds.
+  path: Assets/Materials/wood2.mat
+  artifactKey: Guid(cc33f796200bd4adca16d63e1435fc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/wood2.mat using Guid(cc33f796200bd4adca16d63e1435fc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45766771250df157af723bd442cef88e') in 0.027293 seconds
+  Import took 0.032011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Assets/Materials/UI sheen.mat
+  artifactKey: Guid(4eec87d6b99ad427c85eb4bdd7246f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/UI sheen.mat using Guid(4eec87d6b99ad427c85eb4bdd7246f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8df22c769566687f8e82f7dc5b16db6') in 0.158906 seconds
+  Import took 0.171196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Materials/background.mat
+  artifactKey: Guid(3ac52c6cabe1540c281daffc73be68ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/background.mat using Guid(3ac52c6cabe1540c281daffc73be68ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d7afbf96ac6f1ffb4162e850dca6da5') in 0.073637 seconds
+  Import took 0.084568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000589 seconds.
+  path: Assets/Materials/dark steel.mat
+  artifactKey: Guid(fcdd99a282b7f45f5865caeea3aac578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/dark steel.mat using Guid(fcdd99a282b7f45f5865caeea3aac578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5156a71a4fba21821cc257c009a9cd58') in 0.031380 seconds
+  Import took 0.038366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.105479 seconds.
+  path: Assets/Scenes/Custom0.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Custom0.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e98e9305443e5d2240f79dce6ac63294') in 0.003662 seconds
+  Import took 0.007435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 517.015475 seconds.
+  path: Assets/Objects/Cube.prefab
+  artifactKey: Guid(1b90d5f497b9d459c8f6c9da7001efcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Cube.prefab using Guid(1b90d5f497b9d459c8f6c9da7001efcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b98c3bd2da903248bddb2b080111d97') in 0.159153 seconds
+  Import took 0.169560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018608 seconds.
+  path: Assets/Objects/Cube.prefab
+  artifactKey: Guid(1b90d5f497b9d459c8f6c9da7001efcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Cube.prefab using Guid(1b90d5f497b9d459c8f6c9da7001efcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b98c3bd2da903248bddb2b080111d97') in 0.028470 seconds
+  Import took 0.032704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 441.535656 seconds.
+  path: Assets/Objects/Cylinder.prefab
+  artifactKey: Guid(6b282568d57a84c4b945414df1768cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Cylinder.prefab using Guid(6b282568d57a84c4b945414df1768cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e52c6b74d5f1043a4e209976890fb0') in 0.031160 seconds
+  Import took 0.037904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017116 seconds.
+  path: Assets/Objects/Cylinder.prefab
+  artifactKey: Guid(6b282568d57a84c4b945414df1768cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Cylinder.prefab using Guid(6b282568d57a84c4b945414df1768cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e52c6b74d5f1043a4e209976890fb0') in 0.017810 seconds
+  Import took 0.022988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.929434 seconds.
+  path: Assets/Objects/Cylinder.prefab
+  artifactKey: Guid(6b282568d57a84c4b945414df1768cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Cylinder.prefab using Guid(6b282568d57a84c4b945414df1768cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7908aecfe1a4d3c8c07918fcd3eab663') in 0.031315 seconds
+  Import took 0.035915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003707 seconds.
+  path: Assets/Objects/Cylinder.prefab
+  artifactKey: Guid(6b282568d57a84c4b945414df1768cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Cylinder.prefab using Guid(6b282568d57a84c4b945414df1768cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7908aecfe1a4d3c8c07918fcd3eab663') in 0.018452 seconds
+  Import took 0.025320 seconds .
+
