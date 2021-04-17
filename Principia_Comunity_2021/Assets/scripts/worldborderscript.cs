@@ -12,6 +12,8 @@ public class worldborderscript : MonoBehaviour
     public float bottom;
 
     public GameObject UIhandler;
+    [SerializeField]
+    public GameObject[] borders;
 
     private Vector3 sizer; 
     private Vector3 mover;
@@ -37,6 +39,7 @@ public class worldborderscript : MonoBehaviour
             mover = new Vector3(right-left, top-bottom, 0);
             gameObject.transform.position += mover;
             gameObject.transform.localScale += sizer;
+            UIhandler.GetComponent<MainUIHandeler>().saveBorderSize = false;
         }
     }
 }

@@ -42,6 +42,7 @@ public class MainUIHandeler : MonoBehaviour
         buttons[2].GetComponent<Button>().onClick.AddListener(General);
         buttons[3].GetComponent<Button>().onClick.AddListener(World);
         buttons[4].GetComponent<Button>().onClick.AddListener(SaveBorderSize);
+        buttons[5].GetComponent<Button>().onClick.AddListener(OpenObjectMenu);
         right = worldborder.GetComponent<worldborderscript>().right;
        
     }
@@ -90,4 +91,10 @@ public class MainUIHandeler : MonoBehaviour
     {
         saveBorderSize = true;
     }
-}
+
+    void OpenObjectMenu()
+    {
+
+    }
+    
+ }

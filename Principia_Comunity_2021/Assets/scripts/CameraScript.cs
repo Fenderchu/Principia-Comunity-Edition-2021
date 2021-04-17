@@ -17,24 +17,14 @@ public class CameraScript : MonoBehaviour
     private float bottomBorder;
 
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+
 
     // Update is called once per frame
     void Update()
     {
 
-        if(UIhandler.GetComponent<MainUIHandeler>().saveBorderSize)
-        {
-            rightBorder = worldborder.GetComponent<worldborderscript>().right + 400;
-            leftBorder = (worldborder.GetComponent<worldborderscript>().left + 400) * -1;
-            topBorder = worldborder.GetComponent<worldborderscript>().top + 600;
-            bottomBorder = (worldborder.GetComponent<worldborderscript>().bottom + 600) * -1;
-            UIhandler.GetComponent<MainUIHandeler>().saveBorderSize = false;
-        }
+
 
         if (paused != true)
         {
@@ -44,7 +34,7 @@ public class CameraScript : MonoBehaviour
             float Vertical =  Input.GetAxis("Vertical");
             float Scroll = Input.GetAxis("Mouse ScrollWheel");
 
-            if(Scroll < 0 & gameObject.transform.position.z < -150)
+            if(Scroll < 0 & gameObject.transform.position.z < -100)
             {
                 gameObject.transform.position += new Vector3(0,0,5);
             }
@@ -53,19 +43,19 @@ public class CameraScript : MonoBehaviour
                 gameObject.transform.position += new Vector3(0,0,-5);
             }
 
-            if(Horizontal > 0 & gameObject.transform.position.x < rightBorder)
+            if(Horizontal > 0 )
             {
                 gameObject.transform.position += new Vector3(5,0,0);
             }
-            if(Horizontal < 0 & gameObject.transform.position.x > leftBorder)
+            if(Horizontal < 0  )
             {
                 gameObject.transform.position += new Vector3(-5,0,0);
             }
-            if(Vertical > 0 & gameObject.transform.position.y < topBorder)
+            if(Vertical > 0 )
             {
                 gameObject.transform.position += new Vector3(0,5,0);
             }
-            if(Vertical < 0 & gameObject.transform.position.y > bottomBorder)
+            if(Vertical < 0 )
             {
                 gameObject.transform.position += new Vector3(0,-5,0);
             }           
