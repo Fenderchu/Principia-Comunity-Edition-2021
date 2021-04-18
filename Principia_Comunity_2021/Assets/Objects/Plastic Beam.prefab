@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3333421633013797271}
   - component: {fileID: 3333421633013797268}
   - component: {fileID: 3333421633013797269}
+  - component: {fileID: 4107252212695988621}
   m_Layer: 0
   m_Name: Plastic Beam
   m_TagString: Untagged
@@ -112,3 +113,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 56
   m_CollisionDetection: 0
+--- !u!114 &4107252212695988621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333421633013797266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7622e59051444c2e90cab1d3393ad61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

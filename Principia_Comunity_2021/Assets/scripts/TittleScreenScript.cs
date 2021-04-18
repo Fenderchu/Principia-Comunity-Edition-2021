@@ -19,6 +19,7 @@ public class TittleScreenScript : MonoBehaviour
      buttons[0].GetComponent<Button>().onClick.AddListener(Play);
      buttons[1].GetComponent<Button>().onClick.AddListener(About);
      buttons[2].GetComponent<Button>().onClick.AddListener(Back);
+     buttons[3].GetComponent<Button>().onClick.AddListener(Psst);
      main = canvi1.gameObject;
      about = canvi2.gameObject;
        
@@ -49,5 +50,9 @@ public class TittleScreenScript : MonoBehaviour
                
         about.SetActive(false);
         main.SetActive(true);
+    }
+    void Psst()
+    {
+        SceneManager.LoadScene("ObjectTesting");
     }
 }
