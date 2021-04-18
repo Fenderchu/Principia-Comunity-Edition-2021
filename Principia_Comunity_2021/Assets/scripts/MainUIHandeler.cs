@@ -12,6 +12,9 @@ public class MainUIHandeler : MonoBehaviour
     [SerializeField]
     public Slider[] sliders;
 
+    //public ScrollView objectWindow;
+   // public Panel objects;
+
     public GameObject overlay;
     public GameObject camera1;
     public GameObject worldborder;
