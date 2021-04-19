@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 6708247006155097260}
   - component: {fileID: 6708247006155097261}
   - component: {fileID: 5962270143549075400}
+  - component: {fileID: 2331383556917599039}
+  - component: {fileID: 1284400798240913009}
+  - component: {fileID: 4728712082069885393}
   m_Layer: 0
   m_Name: Plank
   m_TagString: Untagged
@@ -112,7 +115,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 56
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &5962270143549075400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,3 +128,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7622e59051444c2e90cab1d3393ad61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2331383556917599039
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6708247006155097258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01, z: 6}
+  m_Center: {x: 0.005, y: 0, z: 0}
+--- !u!65 &1284400798240913009
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6708247006155097258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01, z: 6}
+  m_Center: {x: 0.45, y: 0, z: 0}
+--- !u!65 &4728712082069885393
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6708247006155097258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.01, z: 6}
+  m_Center: {x: -0.45, y: 0, z: 0}

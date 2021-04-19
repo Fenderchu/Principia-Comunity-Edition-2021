@@ -26,6 +26,8 @@ public class DragObject : MonoBehaviour
 
     void OnMouseDrag()
     {
+        gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
+        gameObject.GetComponent<Rigidbody>().angularVelocity = new Vector3(0,0,0);
         transform.position = GetMouseWorldPos() +mouseOffset;
     }
 }

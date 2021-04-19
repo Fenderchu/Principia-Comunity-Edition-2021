@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4f4741cf2bcff4592b2e025843629927
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fuseButton: {fileID: 7950326971058671745, guid: 94fc0a7cd39184fce92abc86b5877d72, type: 3}
+  - screwButton: {fileID: 2875896623816449602, guid: db036c4b1c4094275b755e2d0fca84a8, type: 3}
+  - mainCanvas: {fileID: 1584336422854697630, guid: d3d28a4c8338e4787b479a3c4226011f, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

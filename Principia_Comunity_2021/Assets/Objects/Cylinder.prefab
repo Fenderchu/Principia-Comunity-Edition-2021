@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 4577104030059280062}
   - component: {fileID: 349404262340890223}
   - component: {fileID: 1913476094012029684}
+  - component: {fileID: 3710349457231992002}
+  - component: {fileID: 560021967281737221}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -99,7 +101,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 88
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!64 &349404262340890223
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -126,3 +128,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7622e59051444c2e90cab1d3393ad61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3710349457231992002
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538063402955093652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 15, z: 0.01}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &560021967281737221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538063402955093652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4741cf2bcff4592b2e025843629927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuseButton: {fileID: 7950326971058671745, guid: 94fc0a7cd39184fce92abc86b5877d72, type: 3}
+  screwButton: {fileID: 2875896623816449602, guid: db036c4b1c4094275b755e2d0fca84a8, type: 3}
+  mainCanvas: {fileID: 1584336422854697630, guid: d3d28a4c8338e4787b479a3c4226011f, type: 3}
