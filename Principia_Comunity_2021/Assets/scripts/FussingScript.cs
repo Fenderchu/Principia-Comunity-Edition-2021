@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class FussingScript : MonoBehaviour
 {
-    public Button fuseButton;
+    public GameObject fuseButton;
     public Button screwButton;
 
    
@@ -29,11 +29,15 @@ public class FussingScript : MonoBehaviour
     {
         foreach (ContactPoint contact in col.contacts)
         {
-             Instantiate(fuseButton, Camera.main.WorldToScreenPoint(contact.point), Quaternion.identity, holder.transform);
-            
-            
+            if(col.gameObject.tag != "fuser"){
+
+            GameObject newButton = Instantiate(fuseButton, Camera.main.WorldToScreenPoint(contact.point), Quaternion.identity, holder.transform);
+            newButton.transform.GetChild(0).gameObject.transform.position = new Vector3 (contact.point.x,contact.point.y, contact.point.z);
+            }
 
         }
         
     }
+
+ 
 }

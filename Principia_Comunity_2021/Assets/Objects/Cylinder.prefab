@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 349404262340890223}
   - component: {fileID: 1913476094012029684}
   - component: {fileID: 3710349457231992002}
-  - component: {fileID: 560021967281737221}
+  - component: {fileID: 534782318559086023}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -141,7 +141,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 15, z: 0.01}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &560021967281737221
+--- !u!114 &534782318559086023
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,6 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f4741cf2bcff4592b2e025843629927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuseButton: {fileID: 7950326971058671745, guid: 94fc0a7cd39184fce92abc86b5877d72, type: 3}
-  screwButton: {fileID: 2875896623816449602, guid: db036c4b1c4094275b755e2d0fca84a8, type: 3}
-  mainCanvas: {fileID: 1584336422854697630, guid: d3d28a4c8338e4787b479a3c4226011f, type: 3}
+  fuseButton: {fileID: 8176348653691838557, guid: 8d7213bd946de45de8e0642bd4154189, type: 3}
+  screwButton: {fileID: 0}
+  holder: {fileID: 0}
