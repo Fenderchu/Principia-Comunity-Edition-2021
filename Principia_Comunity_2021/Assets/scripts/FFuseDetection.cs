@@ -7,24 +7,25 @@ public class FFuseDetection : MonoBehaviour
     private int triggerInt;
     void Awake()
     {
-        triggerInt = 2;
+        triggerInt = 0;
     }
     void Update()
     {
-        if(triggerInt < 2)
+        if(triggerInt <=1)
         {
-            Destroy(gameObject, 0.1f);
+            Debug.Log("makes it here");
+            Destroy(gameObject.transform.parent.gameObject);
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        triggerInt++;
-        Debug.Log(triggerInt);
+        triggerInt+= 1;
     }
 
     void OnTriggerExit(Collider other)
     {
-        triggerInt--;
+        triggerInt-= 1;
+
     }
 }
