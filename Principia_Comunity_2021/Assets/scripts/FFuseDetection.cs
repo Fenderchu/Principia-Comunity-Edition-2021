@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class FFuseDetection : MonoBehaviour
 {
-    private int triggerInt;
+    public int triggerInt;
     void Awake()
     {
         triggerInt = 0;
     }
     void Update()
     {
-        if(triggerInt <=1)
+        if(triggerInt < 0)
         {
             Debug.Log("makes it here");
             Destroy(gameObject.transform.parent.gameObject);

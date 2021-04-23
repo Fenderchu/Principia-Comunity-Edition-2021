@@ -12,9 +12,12 @@ public class FussingScript : MonoBehaviour
 
     public GameObject holder;
 
+    private bool waitActive;
+
     // Start is called before the first frame update
     void Start()
     {
+        waitActive = false;
         
         
     }
@@ -27,16 +30,29 @@ public class FussingScript : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
+        if(waitActive)
+        {
+            StartCoroutine(Spawning(col));
+            waitActive = true;
+        }
+
+        
+    }
+    
+    IEnumerator Spawning(Collision col)
+    {
         foreach (ContactPoint contact in col.contacts)
         {
-            if(col.gameObject.tag != "fuser"){
+            if(col.gameObject.tag != "fuser")
+            {
 
-            GameObject newButton = Instantiate(fuseButton, Camera.main.WorldToScreenPoint(contact.point), Quaternion.identity, holder.transform);
-            newButton.transform.GetChild(0).gameObject.transform.position = new Vector3 (contact.point.x,contact.point.y, contact.point.z);
+                GameObject newButton = Instantiate(fuseButton, Camera.main.WorldToScreenPoint(contact.point), Quaternion.identity, holder.transform);
+                newButton.transform.GetChild(0).gameObject.transform.position = new Vector3 (contact.point.x,contact.point.y, contact.point.z);
             }
 
         }
-        
+        waitActive = false;
+        yeild return new WaitForSeconds(1);
     }
 
  
