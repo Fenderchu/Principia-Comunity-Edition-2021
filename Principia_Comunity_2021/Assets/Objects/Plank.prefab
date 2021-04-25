@@ -17,9 +17,10 @@ GameObject:
   - component: {fileID: 2331383556917599039}
   - component: {fileID: 1284400798240913009}
   - component: {fileID: 4728712082069885393}
+  - component: {fileID: 1177423780459793007}
   m_Layer: 0
   m_Name: Plank
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,6 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7622e59051444c2e90cab1d3393ad61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSelected: 0
 --- !u!65 &2331383556917599039
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -167,3 +169,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.01, z: 6}
   m_Center: {x: -0.45, y: 0, z: 0}
+--- !u!114 &1177423780459793007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6708247006155097258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4741cf2bcff4592b2e025843629927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuseButton: {fileID: 8176348653691838557, guid: 8d7213bd946de45de8e0642bd4154189, type: 3}
+  screwButton: {fileID: 0}
+  holder: {fileID: 0}

@@ -11,7 +11,7 @@ public class FFuseDetection : MonoBehaviour
     }
     void Update()
     {
-        if(triggerInt < 0)
+        if(triggerInt <= 1)
         {
             Debug.Log("makes it here");
             Destroy(gameObject.transform.parent.gameObject);

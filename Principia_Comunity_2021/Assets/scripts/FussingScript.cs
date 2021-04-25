@@ -30,7 +30,8 @@ public class FussingScript : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if(waitActive)
+        bool isSelected = gameObject.GetComponent<DragObject>().isSelected;
+        if(!waitActive && isSelected)
         {
             StartCoroutine(Spawning(col));
             waitActive = true;
@@ -41,8 +42,10 @@ public class FussingScript : MonoBehaviour
     
     IEnumerator Spawning(Collision col)
     {
+
         foreach (ContactPoint contact in col.contacts)
         {
+            yield return new WaitForSeconds(0.1f);
             if(col.gameObject.tag != "fuser")
             {
 
@@ -52,7 +55,8 @@ public class FussingScript : MonoBehaviour
 
         }
         waitActive = false;
-        yeild return new WaitForSeconds(1);
+        StopCoroutine("Spawning");
+        
     }
 
  

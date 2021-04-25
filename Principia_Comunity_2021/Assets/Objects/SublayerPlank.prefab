@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 5475682522896336815}
   - component: {fileID: 1558170256915980971}
   - component: {fileID: 3165901973213914554}
+  - component: {fileID: 6950074102374613267}
   m_Layer: 0
   m_Name: SublayerPlank
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7622e59051444c2e90cab1d3393ad61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSelected: 0
 --- !u!65 &3165901973213914554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -139,3 +141,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6950074102374613267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5475682522896336808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4741cf2bcff4592b2e025843629927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuseButton: {fileID: 8176348653691838557, guid: 8d7213bd946de45de8e0642bd4154189, type: 3}
+  screwButton: {fileID: 0}
+  holder: {fileID: 0}

@@ -8,13 +8,17 @@ public class CameraScript : MonoBehaviour
     public float scrollSpeed;
     public bool paused;
 
-    public GameObject worldborder; 
-    public GameObject UIhandler;
+
+  
 
     private float rightBorder;
     private float leftBorder;
     private float topBorder;
     private float bottomBorder;
+
+    public GameObject selectedObject = null;
+
+    private DragObject selectedInfo;
 
     
 
@@ -23,6 +27,10 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetMouseButtonDown(1))
+        {
+            LeftClick();
+        }
 
 
 
@@ -62,5 +70,30 @@ public class CameraScript : MonoBehaviour
 
             
         }
+    }
+
+     void LeftClick()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            if (hit.collider.tag != "Object" && selectedObject != null)
+            { 
+                selectedInfo.isSelected = false;
+                selectedObject = null;
+                Debug.Log("Deselected");
+            }
+            else if (hit.collider.tag == "Object")
+            {
+                selectedObject = hit.collider.gameObject;
+                selectedInfo = selectedObject.GetComponent<DragObject>();
+
+                selectedInfo.isSelected = true;
+                Debug.Log("selected" + gameObject.tag);
+            }
+        }
+
     }
 }

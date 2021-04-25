@@ -8,6 +8,8 @@ public class DragObject : MonoBehaviour
 
     private float mouseZ;
 
+    public bool isSelected = false;
+
     void OnMouseDown()
     {
         mouseZ = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 534782318559086023}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7622e59051444c2e90cab1d3393ad61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSelected: 0
 --- !u!65 &3710349457231992002
 BoxCollider:
   m_ObjectHideFlags: 0
