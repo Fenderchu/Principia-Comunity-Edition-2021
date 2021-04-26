@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1177423780459793007, guid: d53eceafdc5874ead970528a4656fa04, type: 3}
+      propertyPath: holder
+      value: 
+      objectReference: {fileID: 486702367}
     - target: {fileID: 6708247006155097249, guid: d53eceafdc5874ead970528a4656fa04, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -379,6 +383,7 @@ GameObject:
   - component: {fileID: 402727210}
   - component: {fileID: 402727209}
   - component: {fileID: 402727208}
+  - component: {fileID: 402727211}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -451,6 +456,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &402727211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402727207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98b8e4fd98af54b169253d34ef48c2e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  scrollSpeed: 10
+  paused: 0
+  selectedObject: {fileID: 0}
 --- !u!1 &486702367 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7761625216846483720, guid: 79713c9620d474d9f93beccc7f30da20, type: 3}
@@ -779,8 +800,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7840147990682380256, guid: 1b90d5f497b9d459c8f6c9da7001efcb, type: 3}
+      propertyPath: holder
+      value: 
+      objectReference: {fileID: 486702367}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b90d5f497b9d459c8f6c9da7001efcb, type: 3}
+--- !u!1 &2053225918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 538063402955093652, guid: 6b282568d57a84c4b945414df1768cbe, type: 3}
+  m_PrefabInstance: {fileID: 1430978439818887761}
+  m_PrefabAsset: {fileID: 0}
+--- !u!138 &2053225919
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053225918}
+  m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1001 &1430978439818887761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -921,6 +966,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6433397383922844219, guid: 0db60f096fc154a809625db3b92ef167, type: 3}
+      propertyPath: holder
+      value: 
+      objectReference: {fileID: 486702367}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0db60f096fc154a809625db3b92ef167, type: 3}
 --- !u!1001 &4701227778068378279
@@ -978,6 +1027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SublayerPlank
       objectReference: {fileID: 0}
+    - target: {fileID: 6950074102374613267, guid: 378a16faeb73b40ebbe587679111e6f2, type: 3}
+      propertyPath: holder
+      value: 
+      objectReference: {fileID: 486702367}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 378a16faeb73b40ebbe587679111e6f2, type: 3}
 --- !u!1001 &5433499153104733356
@@ -1035,5 +1088,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube
       objectReference: {fileID: 0}
+    - target: {fileID: 7840147990682380256, guid: 1b90d5f497b9d459c8f6c9da7001efcb, type: 3}
+      propertyPath: holder
+      value: 
+      objectReference: {fileID: 486702367}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b90d5f497b9d459c8f6c9da7001efcb, type: 3}

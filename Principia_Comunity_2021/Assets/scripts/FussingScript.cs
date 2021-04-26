@@ -12,6 +12,7 @@ public class FussingScript : MonoBehaviour
 
     public GameObject holder;
 
+
     private bool waitActive;
 
     // Start is called before the first frame update
@@ -42,6 +43,7 @@ public class FussingScript : MonoBehaviour
     
     IEnumerator Spawning(Collision col)
     {
+        
 
         foreach (ContactPoint contact in col.contacts)
         {
@@ -49,15 +51,14 @@ public class FussingScript : MonoBehaviour
             if(col.gameObject.tag != "fuser")
             {
 
+
                 GameObject newButton = Instantiate(fuseButton, Camera.main.WorldToScreenPoint(contact.point), Quaternion.identity, holder.transform);
                 newButton.transform.GetChild(0).gameObject.transform.position = new Vector3 (contact.point.x,contact.point.y, contact.point.z);
+                
             }
-
+            
         }
-        waitActive = false;
         StopCoroutine("Spawning");
         
-    }
-
- 
+    } 
 }
